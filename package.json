@@ -1,13 +1,9 @@
 {
   "name": "build-webpack",
   "version": "1.0.0",
-  "description": "The best way to understand how something works is to look at the source code. Pull down and run the tests of the real webpack:",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Build a simple webpack version - just for fun and learning",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "try": "webpack lib/index.js dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/besarthoxhaj/build-webpack/issues"
   },
-  "homepage": "https://github.com/besarthoxhaj/build-webpack#readme"
+  "homepage": "https://github.com/besarthoxhaj/build-webpack#readme",
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  }
 }
