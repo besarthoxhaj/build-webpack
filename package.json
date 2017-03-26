@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Build a simple webpack version - just for fun and learning",
   "scripts": {
-    "try": "webpack lib/index.js dist/bundle.js"
+    "try": "webpack lib/index.js dist/bundle.js",
+    "test": "node test/runner.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   },
   "homepage": "https://github.com/besarthoxhaj/build-webpack#readme",
   "devDependencies": {
+    "tape": "^4.6.3",
     "webpack": "^2.3.2"
   }
 }

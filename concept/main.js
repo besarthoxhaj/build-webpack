@@ -11,17 +11,17 @@
     return module.exports;
   }
 
-  require(1);
+  require(0);
 })([
+  (function(module, _require_) {
+    'use strict';
+
+    var one = _require_(1);
+    console.log('Hello, ' + one);
+  }),
   (function(module, _require_) {
     'use strict';
 
     module.exports = 'World!';
   }),
-  (function(module, _require_) {
-    'use strict';
-
-    var one = _require_(0);
-    console.log('Hello, ' + one);
-  })
 ])
